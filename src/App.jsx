@@ -1,6 +1,13 @@
-export const App = () => {
-  const inpuType = "number";
-  const minValue = 5;
+import { ProfileCard } from "./ProfileCard";
 
-  return <input maxLength={5} />;
+export const App = (props) => {
+  return (
+    <div>
+      <div>Personal Digital Assistants</div>
+
+      <ProfileCard title="Alexa" handle="@alexa99" />
+      <ProfileCard title="Cortana" handle="@cortana32" />
+      <ProfileCard title="Siri" handle="@siri01" />
+    </div>
+  );
 };
